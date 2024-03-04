@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900& display=swap');
+
+/* VARIABLES DEFINITION */
+
+:root{
+    --color-principal: #0ef;
+    --color-secondary: #ffffff;
+
+    --color-background: #081b29;
+    --color-transparent: transparent;
+    --color-new: #6ae90f;
+    --color-glowing: #f70606;
+    --color-yellow: #f7ef06;
+    --color-blue: #0662f7;
+    --color-red: #f70606;
+    --color-subtitle: #312f2f;
+    --color-lateral:#051521;
+}
+
+/*--GENERAL STYLES--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-background);
+}
+
+.container{
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .spinBtn{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-background);
+    letter-spacing: 0.1rem;
+    border: 0.4rem solid var(--color-background);
+    cursor: pointer;
+    user-select: none;
+}
+
+.container .spinBtn::before{
+content: '';
+position: absolute;
+top: -2rem;
+width: 2rem;
+height: 3rem;
+background: var(--color-secondary);
+/* CSS CLIP PATH MAKER: https://bennettfeely.com/clippy/ */
+clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+.container .wheel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-background);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.3rem #081b29, 0 0 0 1rem #ffffff, 0 0 0 1.3rem #113650;
+    
+    transition: transform 5s ease-in-out;
+}
+
+.container .wheel .name{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(45deg *var(--i)));
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.container .wheel .name span{
+    position: relative;
+    transform: rotate(45deg);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.20);
+}
