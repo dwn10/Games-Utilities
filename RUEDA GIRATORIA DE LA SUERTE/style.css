@@ -5,16 +5,8 @@
 :root{
     --color-principal: #0ef;
     --color-secondary: #ffffff;
-
+    --color-active: #6ae90f;
     --color-background: #081b29;
-    --color-transparent: transparent;
-    --color-new: #6ae90f;
-    --color-glowing: #f70606;
-    --color-yellow: #f7ef06;
-    --color-blue: #0662f7;
-    --color-red: #f70606;
-    --color-subtitle: #312f2f;
-    --color-lateral:#051521;
 }
 
 /*--GENERAL STYLES--*/
@@ -71,6 +63,11 @@ height: 3rem;
 background: var(--color-secondary);
 /* CSS CLIP PATH MAKER: https://bennettfeely.com/clippy/ */
 clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+.container .spinBtn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .container .wheel{
