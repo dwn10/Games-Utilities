@@ -10,7 +10,7 @@ const Projects = {
 ```
 ## Contenido
 <ul>
-	<li><a href="https://github.com/dwn10/web-widgets/tree/main/WEBSITE">RUEDA DE LA SUERTE</a></li>
+	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/RUEDA%20GIRATORIA%20DE%20LA%20SUERTE">RUEDA DE LA SUERTE</a></li>
 </ul>
 
 ## RUEDA DE LA SUERTE
