@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900& display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+/* VARIABLES DEFINITION */
+
+:root{
+    --color-principal: #0ef;
+    --color-secondary: #ffffff;
+    --color-active: #6ae90f;
+    --color-background: #081b29;
+
+--color-card-1: #f7e98d;
+--color-card-2: #8df7e5;
+--color-card-3: #dd8df7;
+--color-card-4: #b2f78d;
+--color-card-5: #f7d98d;
+--color-card-6: #f78dcb;
+
+    --size: 15rem
+}
+
+/*--GENERAL STYLES--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-background);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.container .notes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container .notes .note{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: var(--color-card-1);
+    padding: 1.5rem;
+    box-shadow: 0 15px 30px rgba(25, 255, 255, 0.245);
+}
+
+.container .notes .note::before {
+    content: 'Doble clic para remover esta nota';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(25, 255, 255, 0.245);
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.container .notes .note:hover::before{
+    opacity: 1;
+}
+
+#create{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(255, 255, 255, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#create:hover{
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 20px 30px rgba(25, 255, 40, 0.321);
+}
+
+#create i{
+    position: absolute;
+    color: var(--color-secondary);
+}
+
+.createBox{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    z-index: 1000;
+    display: none;
+}
+
+.createBox textarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--size);
+    height: var(--size);
+    padding: 1.5rem;
+    outline: none;
+    resize: none;
+    font-size: 1.1rem;
+}
+
+.details h3{
+    font-family: 'Handlee', cursive;
+    user-select: none;
+    font-size: 1.3rem;
+}
+
+.container-title h1 {
+    font-family: 'Handlee', cursive;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-shadow: 2px 3px 3px rgba(169, 96, 171, 0.726);
+}
+.container-title h1 span{
+    font-family: 'Handlee', cursive;
+    color: var(--color-principal);
+}
+
+#note-count{
+    font-family: 'Handlee', cursive;
+    display: flex;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
