@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Publisher, Autor-->
+    <meta name="author" content="Darwin Paz">
+    <title>Puzzle Rubik</title>
+</head>
+<body>
+    <div class="container-title">
+        <h1>PUZZLE <br><span> RUBIK</span></h1>
+    <!--Arrastrar y soltar elementos-->
+    <div class="drag" id="drag">
+        
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url(1.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block2" style="--img:url(2.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block3" style="--img:url(3.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block4" style="--img:url(4.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block5" style="--img:url(5.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block6" style="--img:url(6.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block7" style="--img:url(7.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block8" style="--img:url(8.png)"></div>
+        </div>
+        <div  class="dragBox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block9" style="--img:url(9.png)"></div>
+        </div>
+
+    </div>
+    <!--Soltar áreas objetivo-->
+    <div class="board">
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <!--Botón de reinicio-->
+    <button class="reset" onClick="window.location.reload();">Resetear Puzzle</button>
+
+    <script>
+        // Esta función se activa cuando un elemento arrastrable (imagen)
+        function drag(event){
+            event.dataTransfer.setData("text", event.target.id);
+        }
+        // Esta función se activa cuando una operación de arrastre ingresa a un área de destino de colocación
+        function allowDrop(event){
+            event.preventDefault();
+        }
+        // Esta función se activa cuando un elemento arrastrado se suelta en un área de destino para soltar.
+        function drop(event){
+            event.preventDefault();
+            let data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+        }
+// Esta función se ejecuta cuando la página web termina de cargarse.
+//Cambia el orden de los elementos que se pueden arrastrar
+//(bloques de imágenes) dentro del contenedor de arrastre
+        onload = function(){
+            let parent = document.getElementById('drag');
+            let frag = document.createDocumentFragment();
+            while (parent.children.length){
+                frag.appendChild(parent.children[Math.floor
+                (Math.random() * parent.children.length)]);
+            }
+            parent.appendChild(frag);
+        }
+    </script>
+
+</body>
+</html>
