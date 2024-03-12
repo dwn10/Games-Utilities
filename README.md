@@ -12,6 +12,7 @@ const Projects = {
 <ul>
 	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/RUEDA%20GIRATORIA%20DE%20LA%20SUERTE">RUEDA DE LA SUERTE</a></li>
 	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/LISTA%20DE%20TAREAS">LISTA DE TAREAS</a></li>
+ 	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/PUZZLE">PUZZLE</a></li>
 </ul>
 
 ## RUEDA DE LA SUERTE
