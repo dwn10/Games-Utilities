@@ -30,7 +30,7 @@ En la parte superior se muestra un contador que indica el número total de notas
 <a href="https://media.discordapp.net/attachments/1185882189393575976/1216507202182058034/lista-de-tareas.gif?ex=6600a39e&is=65ee2e9e&hm=d2b94301ace0caee23cc8489564a8bf58a7a4d9b9a138380c92b88caab05aba1&=&width=1062&height=597"><img src="https://media.discordapp.net/attachments/1214730549969813504/1216508004581769288/lista-de-tareas.JPG?ex=6600a45d&is=65ee2f5d&hm=ae5fd5ef91eff8f359ec822e0cf9c71b4ca8d3901963ea6be5b872dc078f9295&=&format=webp&width=1063&height=597" style="height: 80%; width:80%;"/></a>
 
 ## PUZZLE
-aawawwawaa
+Es un juego de colocación de imágenes en un tablero, para interactuar con un puzzle de Rubik digital que el usuario puede resolver arrastrando y soltando las casillas del puzzle.
 `>> IMG + VIDEO <<`
 
 <a href="https://media.discordapp.net/attachments/1185882189393575976/1216902366620680253/puzzle.gif?ex=660213a5&is=65ef9ea5&hm=cb9fe69bd90b7a350a3ee79fd046e261d9707f7372efa13b8f031ce017e483b4&=&width=1062&height=597"><img src="https://media.discordapp.net/attachments/1214730549969813504/1216901701294886912/puzzle-1.png?ex=66021306&is=65ef9e06&hm=fe282e884c0da6b5a3621acc005d3504da6a93349c5a4687f935ed00c0e10fa3&=&format=webp&quality=lossless&width=605&height=339" style="height: 80%; width:80%;"/></a>
