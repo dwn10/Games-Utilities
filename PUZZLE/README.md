@@ -10,7 +10,7 @@ const Projects = {
 ```
 
 ## PUZZLE Descripción:
-- Es un juego de colocación de imágenes en un tablero. para interactuar con un puzzle de Rubik digital que el usuario puede resolver arrastrando y soltando las casillas del puzzle.
+- Es un juego de colocación de imágenes en un tablero, para interactuar con la App el usuario debe resolver el rompecabezas arrastrando y soltando las casillas del puzzle.
 
 ## Secciones del código:
 - Título: Muestra el título "PUZZLE RUBIK"
