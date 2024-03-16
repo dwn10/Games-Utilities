@@ -13,6 +13,7 @@ const Projects = {
 	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/RUEDA%20GIRATORIA%20DE%20LA%20SUERTE">RUEDA DE LA SUERTE</a></li>
 	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/LISTA%20DE%20TAREAS">LISTA DE TAREAS</a></li>
  	<li><a href="https://github.com/dwn10/Games-Utilities/tree/main/PUZZLE">PUZZLE</a></li>
+	<li><a href="#">GALERIA 3D GIRATORIA</a></li>
 </ul>
 
 ## RUEDA DE LA SUERTE
@@ -34,3 +35,9 @@ Es un juego de colocación de imágenes en un tablero, para interactuar con la A
 `>> IMG + VIDEO <<`
 
 <a href="https://media.discordapp.net/attachments/1185882189393575976/1216902366620680253/puzzle.gif?ex=660213a5&is=65ef9ea5&hm=cb9fe69bd90b7a350a3ee79fd046e261d9707f7372efa13b8f031ce017e483b4&=&width=1062&height=597"><img src="https://media.discordapp.net/attachments/1214730549969813504/1216901701294886912/puzzle-1.png?ex=66021306&is=65ef9e06&hm=fe282e884c0da6b5a3621acc005d3504da6a93349c5a4687f935ed00c0e10fa3&=&format=webp&quality=lossless&width=605&height=339" style="height: 80%; width:80%;"/></a>
+
+## GALERIA 3D GIRATORIA
+Los elementos con efecto de giro 3D que contiene una imagen con un ligero reflejo y un texto neón con efecto de movimiento. 
+`>> IMG + VIDEO <<`
+
+<a href="#"><img src="https://media.discordapp.net/attachments/1214730549969813504/1218604683720130701/anwendungsentwicklung.JPG?ex=6608450d&is=65f5d00d&hm=7de3900f9c2e762edbfe79581df4dee603f20aeddfe8a8f88f14acc2fd1fd965&=&format=webp&width=998&height=597" style="height: 80%; width:80%;"/></a>
