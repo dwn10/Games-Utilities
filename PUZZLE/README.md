@@ -1,13 +1,3 @@
-# Proyecto creado con las siguientes tecnologías:
-
-```javascript
-const Projects = {
-  	code: ["HTML", "CSS", "Javascript"],
-	technologies: {
-	devTool: ["Visual Studio Code"]
-	}
-}
-```
 
 ## PUZZLE Descripción:
 - Es un juego de colocación de imágenes en un tablero, para interactuar con la App el usuario debe resolver el rompecabezas arrastrando y soltando las casillas del puzzle.
