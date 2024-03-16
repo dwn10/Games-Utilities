@@ -40,4 +40,4 @@ Es un juego de colocación de imágenes en un tablero, para interactuar con la A
 Los elementos con efecto de giro 3D que contiene una imagen con un ligero reflejo y un texto neón con efecto de movimiento. 
 `>> IMG + VIDEO <<`
 
-<a href="#"><img src="https://media.discordapp.net/attachments/1214730549969813504/1218604683720130701/anwendungsentwicklung.JPG?ex=6608450d&is=65f5d00d&hm=7de3900f9c2e762edbfe79581df4dee603f20aeddfe8a8f88f14acc2fd1fd965&=&format=webp&width=998&height=597" style="height: 80%; width:80%;"/></a>
+<a href="https://media.discordapp.net/attachments/1185882189393575976/1218617622837461002/dev.gif?ex=6608511a&is=65f5dc1a&hm=d74ce14615004103f9e06604c8e56ccfb9fd5645be0c5d0a0e9113b41169961c&=&width=770&height=432"><img src="https://media.discordapp.net/attachments/1214730549969813504/1218604683720130701/anwendungsentwicklung.JPG?ex=6608450d&is=65f5d00d&hm=7de3900f9c2e762edbfe79581df4dee603f20aeddfe8a8f88f14acc2fd1fd965&=&format=webp&width=998&height=597" style="height: 80%; width:80%;"/></a>
