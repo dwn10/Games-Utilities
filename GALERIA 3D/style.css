@@ -7,7 +7,6 @@
     --color-secondary: #ffffff;
     --color-active: #6ae90f;
     --color-background: #081b29;
-    --color-background-2: #062c47;
     --color-red: red;
 }
 
@@ -21,9 +20,14 @@
 }
 
 .neon-text{
-    justify-content: center;
-    align-items: center;
-    margin-top: -40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    text-align: center; /* center align the text horizontally */
+
+
+    margin-top: -20rem;
     text-transform: uppercase;
     font-size: 5rem;
     cursor: pointer;
@@ -60,6 +64,17 @@ body{
     background: var(--color-background);
 }
 
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -16rem;
+    font-size: 1.9rem;
+    color: var(--color-secondary);
+}
+
 .box{
     position: relative;
     width: 12rem;
@@ -87,7 +102,7 @@ body{
     width: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(30rem);
+    transform: rotateY(calc(var(--i) * 65deg)) translateZ(30rem);
     -webkit-box-reflect: below 3px linear-gradient(transparent,transparent,#0004);
 }
 
@@ -97,5 +112,5 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-/*--  object-fit: cover; --*/
+    /* object-fit: cover;*/
 }
